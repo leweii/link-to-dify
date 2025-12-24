@@ -70,6 +70,22 @@
             font-size: 16px;
             margin-top: 10px;
         }
+        .qr-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .qr-instruction {
+            color: #e53e3e;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
     </style>
 </head>
 <body>
@@ -81,6 +97,11 @@
             <button class="copy-btn" onclick="copyLink()">Copy</button>
         </div>
         <p class="instruction">复制粘贴，在浏览器中打开</p>
+
+        <div class="qr-section">
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://test.dify.connexup.ai/chat/k1Ef3ygBo0Nul8Hx" alt="QR Code">
+            <p class="qr-instruction">扫码领取自己的圣诞袜子车！</p>
+        </div>
     </div>
 
     <script>
